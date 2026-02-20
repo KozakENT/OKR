@@ -1,0 +1,52 @@
+
+body {
+    background-color: #EAF4F7;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.6;
+}
+
+#mainTitle {
+    text-align: center;
+    color: darkblue;
+    font-style: italic;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+ul {
+    color: darkred;
+}
+
+ol {
+    color: darkgreen;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #D2E3E8;
+    color: black;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: center;
+}
