@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="author" content="Mykyta Myrakhovskiy">
     <title>OnlyFresh | Лабораторна 2</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        a {
+            color: #8e1f6b !important;
+        }
+    </style>
 </head>
 
-<body bgcolor="#EAF4F7" link="blue" vlink="purple" alink="red">
+<body>
     <p>
         У нашому каталозі представлені червона риба, карасі, окуні та інші морепродукти.
         Вся продукція проходить перевірку перед відправкою клієнту.
     </p>
 
-    <h2 id="catalog">Каталог</h2>
+    <h2 id="catalog" class="section-title">Каталог</h2>
     <p>
         Перейти до <a href="index.html">головної сторінки</a>.
     </p>
@@ -32,25 +39,25 @@
     <hr>
 
     <h2>Категорії товарів</h2>
-
-    <h3>Маркований список</h3>
-    <ul type="circle">
+    <ul class="product-list">
         <li>Червона риба</li>
         <li>Карасі</li>
         <li>Окуні</li>
     </ul>
 
+    <h3>Умови доставки</h3>
+    <ol class="delivery-steps">
+        <li>Обрати рибу в каталозі.</li>
+        <li>Підтвердити адресу доставки.</li>
+        <li>Отримати замовлення у вказаний час.</li>
+    </ol>
+
     <hr>
 
     <h2>Таблиця товарів</h2>
-    <table border="1" width="100%">
-        <caption><b>Популярні позиції</b></caption>
-
-        <tr bgcolor="#D2E3E8">
-            <th>Товар 1</th>
-            <th>Товар 2</th>
-            <th>Товар 3</th>
-            <th>Товар 4</th>
+    <table class="table-main">
+        <tr>
+            <th colspan="4">Популярні товари</th>
         </tr>
 
         <tr>
@@ -78,7 +85,7 @@
     <hr>
 
     <h2>Графік доставки</h2>
-    <table border="1" cellpadding="10" cellspacing="5" width="80%" align="center">
+    <table class="table-main" style="width: 80%; margin: 0 auto;">
         <colgroup>
             <col span="1" bgcolor="#E0F7FA">
             <col span="2" bgcolor="#F1F8E9">
@@ -106,14 +113,5 @@
             <td>3 дні</td>
         </tr>
     </table>
-
-    <hr>
-
-    <h2 id="delivery">Інформація про доставку</h2>
-
-    <iframe src="https://uk.wikipedia.org/wiki/Доставка" 
-            width="600" 
-            height="300">
-    </iframe>
 </body>
 </html>
