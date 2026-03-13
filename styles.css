@@ -15,6 +15,7 @@ h1, h2, h3 {
 }
 
 #mainTitle {
+    color: rgb(64, 13, 102);
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -98,4 +99,49 @@ dl.definition-list dd {
     border: 1px solid #95aab6;
     padding: 10px;
     text-align: center;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: center;
+}
+
+.selectors-demo {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #d6e6eb;
+    border-radius: 8px;
+}
+
+.demo-card {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #f6fbfd;
+    border-left: 4px solid #71a8bc;
+}
+
+/* Контекстний селектор */
+.context-demo p span {
+    color: #05b485;
+    font-weight: bold;
+    background-color: #d9f2ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Сусідній селектор */
+.adjacent-demo h3 + p {
+    color: #0d6a2d;
+    font-weight: bold;
+}
+
+/* Дочірній селектор */
+.child-demo > ul > li {
+    list-style: none;
+    margin: 16px 0 16px 0;
+}
+.child-demo > ul {
+    padding-inline-start: 0;
 }

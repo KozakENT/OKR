@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Mykyta Myrakhovskiy">
-    <title>OnlyFresh | Лабораторна 2</title>
+    <title>OnlyFresh</title>
 
     <link rel="stylesheet" href="styles.css">
 
     <style>
         a {
-            color: blue !important;
+            color: blue;
         }
     </style>
 </head>
@@ -32,11 +32,41 @@
 
     <h2 id="catalog" class="section-title">Каталог</h2>
 
-    <p>Перейти до <a href="catalog.html">сторінки каталогу</a>.</p>
+    <p>Перейти до <a style="color: red" href="catalog.html">сторінки каталогу</a>.</p>
     <p>Перейти до <a href="product.html">сторінки продуктів</a>.</p>
     <p>Перейти до <a href="delivery.html">розділу доставки</a>.</p>
 
     <hr>
+
+     <section class="selectors-demo">
+        <article class="demo-card context-demo">
+            <h3>1) Морепродукти </h3>
+            <p>
+                <span>Нова позиція</span>  Червона форель - 300 грн/кг, філе
+            </p>
+            <div class="child-demo">
+                <ul>
+                    <li>Лосось охолоджений (категорія "Риба")</li>
+                    <li>Креветки тигрові (категорія "Морепродукти")
+                        <ul>
+                            <li>Соус лимонно-часниковий</li>
+                        </ul>
+                    </li>
+                    <li>Мідії у мушлі (категорія "Морепродукти")</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="demo-card adjacent-demo">
+            <h3>2) Знижки</h3>
+            <p>
+                -15% на креветки всіх розмірів!
+            </p>
+            <p>
+                Акція діє до 17го березня.
+            </p>
+        </article>
+    </section>
 
 </body>
 </html>
