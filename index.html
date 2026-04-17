@@ -6,12 +6,6 @@
     <title>OnlyFresh</title>
 
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-        a {
-            color: blue;
-        }
-    </style>
 </head>
 
 <body>
@@ -32,9 +26,11 @@
 
     <h2 id="catalog" class="section-title">Каталог</h2>
 
-    <p>Перейти до <a style="color: red" href="catalog.html">сторінки каталогу</a>.</p>
-    <p>Перейти до <a href="product.html">сторінки продуктів</a>.</p>
-    <p>Перейти до <a href="delivery.html">розділу доставки</a>.</p>
+    <nav class="nav-links">
+        <p>Перейти до <a href="catalog.html">сторінки каталогу</a>.</p>
+        <p>Перейти до <a href="product.html">сторінки продуктів</a>.</p>
+        <p>Перейти до <a href="delivery.html">розділу доставки</a>.</p>
+    </nav>
 
     <hr>
 
@@ -58,6 +54,9 @@
         </article>
 
         <article class="demo-card adjacent-demo">
+            <p>
+                -15% на креветки всіх розмірів!
+            </p>
             <h3>2) Знижки</h3>
             <p>
                 -15% на креветки всіх розмірів!
@@ -68,5 +67,45 @@
         </article>
     </section>
 
+    <section class="positioning-lab">
+        <h2 class="section-title">Викладка морепродуктів</h2>
+
+        <div class="layout-wrapper">
+            <div class="box box-static">
+                <h3>Лосось охолоджений</h3>
+                <p>
+                    <span class="inline-mark">Ціна 450 грн - 1 кг.</span>
+                </p>
+            </div>
+
+            <div class="box box-relative">
+                <h3>Креветки тигрові - 500 г</h3>
+                <span class="inline-mark">«Товар тижня»</span>
+            </div>
+
+            <div class="box box-absolute">
+                <h3>Мідії у мушлі - 1 кг</h3>
+                <span class="inline-mark">В наявності</span>
+            </div>
+
+            <div class="box box-fixed">
+                Безкоштовна доставка від 1200 грн
+            </div>
+        </div>
+
+        <div class="float-container">
+            <div class="float-box">Скумбрія свіжа - 220 грн/кг</div>
+            <p>Тест текст</p>
+            <div class="float-box">Кальмар кільця - 310 грн/кг</div>
+
+        </div>
+
+        <ul class="first-child-demo">
+            <li>Лосось стейк - перша позиція дня</li>
+            <li>Креветки очищені - друга позиція дня</li>
+            <li>Мідії мариновані - третя позиція дня</li>
+        </ul>
+    </section>
 </body>
+<script src="main.js"></script>
 </html>

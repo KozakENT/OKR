@@ -31,8 +31,22 @@ a {
     font-weight: 600;
 }
 
+/* Псевдокласи посилань */
+a:link {
+    color: #0a5a84;
+}
+
+a:visited {
+    color: #6c4e95;
+}
+
 a:hover {
+    color: #d95900;
     text-decoration: underline;
+}
+
+a:active {
+    color: #d1004b;
 }
 
 .highlight-note {
@@ -144,4 +158,111 @@ td, th {
 }
 .child-demo > ul {
     padding-inline-start: 0;
+}
+
+/* Демонстрація блочних/рядкових елементів, позиціонування та float */
+.positioning-lab {
+    margin-top: 24px;
+    padding: 16px;
+    border: 1px solid #c9dfe9;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.layout-wrapper {
+    position: relative;
+    min-height: 250px;
+    border: 1px dashed #90b6c6;
+    padding: 14px;
+    margin-bottom: 16px;
+}
+
+.box {
+    width: 260px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #f2f8fc;
+    border: 1px solid #a8c7d6;
+}
+
+.box-static {
+    position: static;
+}
+
+.box-relative {
+    position: relative;
+    left: 24px;
+    top: 8px;
+    background: #e9f5ff;
+}
+
+.box-absolute {
+    position: absolute;
+    right: 12px;
+    top: 20px;
+    background: #fff1dc;
+    width: 240px;
+}
+
+.box-fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+    width: auto;
+    background: #ffe5f0;
+    border: 1px solid #de7ea8;
+    font-size: 14px;
+}
+
+.inline-mark {
+    display: inline;
+    color: #9d1f52;
+    font-weight: 700;
+}
+
+.float-container {
+    background: #f8fdff;
+    border: 1px solid #c3dfec;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.float-box {
+    float: left;
+    width: 180px;
+    margin: 0 10px 8px 0;
+    padding: 10px;
+    border: 1px solid #7cb2c8;
+    background: #dff4ff;
+}
+
+/* Псевдоелементи */
+.float-container::before {
+    content: "Демонстрація float:";
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #185f7e;
+}
+
+.float-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.first-child-demo {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Псевдоклас :first-child */
+.first-child-demo li:first-child {
+    color: #005c36;
+    font-weight: 700;
+    background: #e8fff1;
+    border-left: 4px solid #28a06a;
+    padding-left: 6px;
 }
